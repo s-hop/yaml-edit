@@ -1,0 +1,16 @@
+# This is an example file that demonstrates the capabilities of yaml-edit.
+
+#$ string
+receipt_name: Receipt
+
+# Let's pretend dates are only allowed in January 2024!
+#$ date min:2024-01-01 max:2024-01-31
+receipt_date: 2024-01-23
+
+#$ integer display:slider min:1 max:100
+price: 12
+
+#$ enum elems:sale,return,other
+type: sale
+
+description: This doesn't have any type annotations attached.

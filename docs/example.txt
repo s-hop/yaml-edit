@@ -1,0 +1,99 @@
+Document {
+  commentBefore: null,
+  comment: null,
+  errors: [],
+  warnings: [],
+  directives: Directives {
+    docStart: null,
+    docEnd: false,
+    yaml: { explicit: false, version: '1.2' },
+    tags: { '!!': 'tag:yaml.org,2002:' }
+  },
+  contents: YAMLMap {
+    items: [
+      Pair {
+        key: Scalar {
+          value: 'receipt_name',
+          range: [ 86, 98, 98 ],
+          source: 'receipt_name',
+          type: 'PLAIN',
+          commentBefore: ' This is an example file that demonstrates the capabilities of yaml-edit.\n' +
+            '\n' +
+            '$ string'
+        },
+        value: Scalar {
+          value: 'Receipt',
+          range: [ 100, 107, 108 ],
+          source: 'Receipt',
+          type: 'PLAIN'
+        }
+      },
+      Pair {
+        key: Scalar {
+          value: 'receipt_date',
+          range: [ 203, 215, 215 ],
+          source: 'receipt_date',
+          type: 'PLAIN',
+          spaceBefore: true,
+          commentBefore: " Let's pretend dates are only allowed in January 2024!\n" +
+            '$ date min:2024-01-01 max:2024-01-31'
+        },
+        value: Scalar {
+          value: '2024-01-23',
+          range: [ 217, 227, 228 ],
+          source: '2024-01-23',
+          type: 'PLAIN'
+        }
+      },
+      Pair {
+        key: Scalar {
+          value: 'price',
+          range: [ 269, 274, 274 ],
+          source: 'price',
+          type: 'PLAIN',
+          spaceBefore: true,
+          commentBefore: '$ integer display:slider min:1 max:100'
+        },
+        value: Scalar {
+          value: 12,
+          range: [ 276, 278, 279 ],
+          source: '12',
+          type: 'PLAIN'
+        }
+      },
+      Pair {
+        key: Scalar {
+          value: 'type',
+          range: [ 312, 316, 316 ],
+          source: 'type',
+          type: 'PLAIN',
+          spaceBefore: true,
+          commentBefore: '$ enum elems:sale,return,other'
+        },
+        value: Scalar {
+          value: 'sale',
+          range: [ 318, 322, 323 ],
+          source: 'sale',
+          type: 'PLAIN'
+        }
+      },
+      Pair {
+        key: Scalar {
+          value: 'description',
+          range: [ 324, 335, 335 ],
+          source: 'description',
+          type: 'PLAIN',
+          spaceBefore: true
+        },
+        value: Scalar {
+          value: "This doesn't have any type annotations attached.",
+          range: [ 337, 385, 385 ],
+          source: "This doesn't have any type annotations attached.",
+          type: 'PLAIN'
+        }
+      }
+    ],
+    range: [ 86, 385, 385 ]
+  },
+  range: [ 86, 385, 385 ]
+}
