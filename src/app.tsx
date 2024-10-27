@@ -1,7 +1,11 @@
+// This file defines the main App component for a Preact application.
+// It demonstrates the capabilities of the yaml-edit project by displaying an example YAML file
+// and a YAML editor side by side. Changes made in the editor are reflected in the displayed YAML content.
+
 import { useState } from 'preact/hooks'
 import './app.css'
 import { Col, Container, Form, Row } from 'react-bootstrap'
-import { YamlEditor } from './components/editor';
+import { YamlEditor } from './components/YamlEditor';
 
 export function App() {
 
@@ -31,7 +35,7 @@ description: This doesn't have any type annotations attached.`;
             <Container className={'mt-3'}>
                 <h1>yaml-edit-preact example</h1>
 
-                <p>This is a demonistration of the yaml-edit project (Preact version). It has an example YAML file on the left and the rendered editor on the right. Editing the right hand side causes the left to update automatically.</p>
+                <p>This is a demonstration of the yaml-edit project (Preact version). It has an example YAML file on the left and the rendered editor on the right. Editing the right hand side causes the left to update automatically.</p>
 
                 <hr />
 
